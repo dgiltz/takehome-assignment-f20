@@ -76,7 +76,7 @@ def new_show(name, episodes_seen):
     return create_response({"show": db.create('show',payload)})
 
 @app.route("/shows/<id>", methods=['PUT'])
-def update_show(name, espisodes_seen):
+def update_show(id, name, espisodes_seen):
     if db.getById('shows', int(id)) is None:
         return create_response(status=404, message="No show with this id exists")
     return create_response({"show": db.updateById("show", id, {"name": name, "episodes_seen": espisodes_seen})})

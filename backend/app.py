@@ -68,18 +68,18 @@ def delete_show(id):
 def get_show(id):
     if db.getById('shows', int(id)) is None:
         return create_response(status=404, message="No show with this id exists")
-    return create_response({"show": db.getById('show', int(id))})
+    return create_response({"shows": db.getById('shows', int(id))})
 
 @app.route("/shows", methods=['POST'])
 def new_show(name, episodes_seen):
     payload = {"name": name, "id": '',"episodes_seen": episodes_seen}
-    return create_response({"show": db.create('show',payload)})
+    return create_response({'shows': db.create('shows', payload)})
 
 @app.route("/shows/<id>", methods=['PUT'])
 def update_show(id, name, espisodes_seen):
     if db.getById('shows', int(id)) is None:
         return create_response(status=404, message="No show with this id exists")
-    return create_response({"show": db.updateById("show", id, {"name": name, "episodes_seen": espisodes_seen})})
+    return create_response({"shows": db.updateById("shows", id, {"name": name, "episodes_seen": espisodes_seen})})
 
 """
 ~~~~~~~~~~~~ END API ~~~~~~~~~~~~

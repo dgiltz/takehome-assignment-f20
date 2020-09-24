@@ -32,9 +32,6 @@ export default {
     };
   }
 };
-Vue.component('Part one', {
-  props: {"complete": Boolean}
-})
 </script>
 
 <style>

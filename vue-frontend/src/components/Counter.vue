@@ -18,9 +18,6 @@ export default {
       count: this.num
     };
   },
-  template: '<p> The count is {{count}} </p>',
-  template: '<button v-on:click="count++">Increase</button>', 
-  template: '<button v-on:click="count--">Decrease</button>'
 };
 </script>
 

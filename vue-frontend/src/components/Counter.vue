@@ -16,7 +16,7 @@ export default {
   props: {'num': Number},
   data() {
     return {
-      count: this.props.num
+      count: this.num
     };
   },
   template: '<p> The count is {{count}} </p>',

@@ -6,7 +6,6 @@
       </p>
     </Counter>
     <div>
-    <div>
       <button v-on:click="count++">Increase</button>
       <button v-on:click="count--">Decrease</button>
     </div>

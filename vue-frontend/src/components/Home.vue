@@ -1,7 +1,8 @@
 <template>
   <div>
-    <!-- PART 1: Pass in a "complete" prop here --> props: ['complete']
+    <!-- PART 1: Pass in a "complete" prop here --> 
     <Instructions />
+    props = ['complete']
     <!-- PART 4: Modify the Show component to accept all of these props -->
     <Show
       v-for="show in shows"

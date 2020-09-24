@@ -11,7 +11,7 @@
 import Counter from "./Counter.vue";
 
 export default {
-  props={
+  props: {
     'id': Number,
     'name': String,
     'episodes_seen': Number

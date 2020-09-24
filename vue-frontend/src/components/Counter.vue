@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Counter num="0"></Counter>
+    <Counter :num="0"></Counter>
     <p>{{count}}</p>
     <div>
       <button v-on:click="count++">Increase</button>

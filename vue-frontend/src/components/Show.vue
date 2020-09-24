@@ -1,3 +1,11 @@
+<template>
+  <!-- PART 4: Add your code here -->
+  <div>
+    <p> Name: {{name}} </p>
+    <Counter num={episodes_seen}></Counter>
+  </div>
+</template>
+
 <script>
 // PART 4: Add your code here
 import Counter from "./Counter.vue";

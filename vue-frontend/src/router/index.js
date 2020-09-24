@@ -10,6 +10,11 @@ export default new Router({
       path: "/",
       name: "Home",
       component: Home
+    },
+    {
+      path: "/counter",
+      name: "Counter",
+      component: Counter
     }
   ] // Add a new route here in Part 2
 });

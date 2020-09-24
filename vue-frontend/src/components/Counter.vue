@@ -6,12 +6,12 @@
       <button v-on:click="count++">Increase</button>
       <button v-on:click="count--">Decrease</button>
     </div>
-    <Counter></Counter>
   </div>
 </template>
 
 <script>
 export default {
+  props: {'num': Number},
   data(num) {
     return {
       count: num

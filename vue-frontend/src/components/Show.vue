@@ -2,7 +2,7 @@
   <!-- PART 4: Add your code here -->
   <div>
     <p> Name: {{name}} </p>
-    <p> <Counter :num=this.episodes_seen>{{counter}}</Counter> </p>
+    <Counter :num=this.episodes_seen>{{counter}}</Counter>
   </div>
 </template>
 

@@ -12,9 +12,9 @@
 
 <script>
 export default {
-  data() {
+  data(num) {
     return {
-      count: 0
+      count: num
     };
   },
   template: '<button v-on:click="count++">Increase</button>', 

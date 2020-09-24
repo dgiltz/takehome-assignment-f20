@@ -1,8 +1,8 @@
 <template>
   <!-- PART 4: Add your code here -->
   <div>
-    <p> Name: {{name}} </p>
-    <Counter :num=this.episodes_seen>{{counter}}</Counter>
+    <Counter :num=this.episodes_seen></Counter>
+    <p> Name: {{name}} {{counter}}</p>
   </div>
 </template>
 

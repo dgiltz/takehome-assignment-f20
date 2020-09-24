@@ -1,8 +1,8 @@
 <template>
-<div>
-  <p>I'm a Counter!</p>
-  <Counter></Counter>
-</div>
+  <div id='Counter'>
+    <p>I'm a Counter!</p>
+    <Counter></Counter>
+  </div>
 </template>
 
 <script>
@@ -12,6 +12,7 @@ export default {
       count: 0
     };
   },
+  template: '<p>The count is {{count}}</p>',
   template: '<button v-on:click="count++">Increase</button>',
   template: '<button v-on:click="count--">Decrease</button>'
 };
@@ -19,4 +20,3 @@ export default {
 
 <style>
 </style>
-

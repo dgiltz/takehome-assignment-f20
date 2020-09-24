@@ -13,9 +13,9 @@
 <script>
 export default {
   props: {'num': Number},
-  data(num) {
+  data() {
     return {
-      count: num
+      count: this.props.num
     };
   },
   template: '<button v-on:click="count++">Increase</button>', 

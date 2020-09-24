@@ -33,7 +33,7 @@ export default {
   }
 };
 Vue.component('Part one', {
-  Props: {"complete": Boolean}
+  props: {"complete": Boolean}
 })
 </script>
 

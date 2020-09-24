@@ -1,8 +1,7 @@
 <template>
   <div>
     <p>I'm a Counter!</p>
-    <Counter v-bind:num=0></Counter>
-    <p>The count is {{count}}</p>
+    <p>The count is <Counter v-bind:num=0>{{count}}</Counter></p>
     <div>
       <button v-on:click="count++">Increase</button>
       <button v-on:click="count--">Decrease</button>

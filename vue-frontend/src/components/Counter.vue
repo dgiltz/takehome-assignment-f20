@@ -1,6 +1,7 @@
 <template>
   <div id='Counter'>
     <p>I'm a Counter!</p>
+    <p>The count is {{count}}</p>
     <Counter></Counter>
   </div>
 </template>

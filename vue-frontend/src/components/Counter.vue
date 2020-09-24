@@ -2,7 +2,7 @@
   <div>
     <p>I'm a Counter!</p>
     <Counter v-bind:num=0>
-      The count is {{count}}
+      <p>The count is {{count}}</p>
     </Counter>
     <div>
       <button v-on:click="count++">Increase</button>
